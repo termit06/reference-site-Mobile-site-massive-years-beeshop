@@ -1,0 +1,209 @@
+@charset "UTF-8";
+.wrapper {
+    width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper-container {
+  padding: 0 138px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper-forcontent {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+
+.content-without-footer {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+
+
+
+
+.click-basic-btn {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 18px 92px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #DB4E66;
+  -webkit-box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
+  box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
+  border-radius: 14px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: background-color 1s ease-out,
+    color 1s ease-out,
+    -webkit-transform 400ms ease;
+  transition: background-color 1s ease-out,
+    color 1s ease-out,
+    -webkit-transform 400ms ease;
+  transition: transform 400ms ease,
+    background-color 1s ease-out,
+    color 1s ease-out;
+  transition: transform 400ms ease,
+    background-color 1s ease-out,
+    color 1s ease-out,
+    -webkit-transform 400ms ease;
+}
+
+.click-basic-btn:hover {
+  background-color: #B0354A;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  color: #420000;
+}
+
+.click-basic-btn:active {
+  background-color: #DB4E66;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  color: #FFFFFF;
+}
+
+.click-basic-btn:disabled {
+  background-color: #E8B0B9;
+  color: #F7E6E6;
+}
+
+.click-basic-btn:disabled:hover {
+  background-color: #E8B0B9;
+  color: #F7E6E6;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.face {
+  margin-top: 210px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background: url(../../../public/static/background-face.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.face-seccont {
+  padding-top: 235px;
+  padding-bottom: 39px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.face-title {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 59px;
+  width: 890px;
+  margin: 0 auto 16px;
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.48);
+  color: #FAFAF9;
+}
+
+.face-title-additional {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+  margin-bottom: 43px;
+  text-align: center;
+  color: #FAFAF9;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.44);
+}
+
+.face-btn {
+  margin: 0 auto 68px;
+}
+
+.face-messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 68px;
+}
+
+.face-messengers-link {
+  -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.69);
+  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.24);
+  display: inline-block;
+  width: 49px;
+  height: 49px;
+  background: #90c1bf;
+  border-radius: 12px;
+  margin-right: 24px;
+}
+
+.face-messengers-link:nth-child(2) .face-messengers-link-svg {
+  margin-left: 6.5px;
+}
+
+.face-messengers-link:last-child {
+  margin-right: 0;
+}
+
+.face-messengers-link:hover {
+  background: #FFFFFF;
+}
+
+.face-messengers-link:hover .face-messengers-link-svg {
+  fill: #90c1bf;
+}
+
+.face-messengers-link:active {
+  background: #90c1bf;
+}
+
+.face-messengers-link:active .face-messengers-link-svg {
+  fill: #FFFFFF;
+}
+
+.face-messengers-link-svg {
+  fill: #FFFFFF;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.face-messengers-link-svg:hover {
+  fill: #90c1bf;
+}
+
+.face-messengers-link-svg:active {
+  fill: #FFFFFF;
+}
+
