@@ -1,14 +1,13 @@
 import React from "react";
-import CalculatorField from "../components/Calculator.tsx/CalculatorField";
-import ClcPad from "../components/Calculator.tsx/Clcpad";
-import { Box, Button } from "@mui/material";
-import MathOperator from "../components/Calculator.tsx/MathOperator";
+import CalculatorField from "../components/Calculator/CalculatorField";
+import ClcPad from "../components/Calculator/Clcpad";
+import { Box } from "@mui/material";
+import MathOperator from "../components/Calculator/MathOperator";
 const Calculator = () => {
   const [numInput, setInput] = React.useState("");
   const [buffer, setBuffer] = React.useState("");
   const [numSecond, setSecond] = React.useState("");
   const [operator, setOperator] = React.useState("");
-
   let k = [];
 
   for (let i = 0; i <= 9; i++) {
@@ -109,5 +108,6 @@ const Calculator = () => {
       </Box>
     </div>
   );
+  
 };
 export default Calculator;
