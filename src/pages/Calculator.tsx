@@ -24,8 +24,7 @@ const Calculator = () => {
       case "+":
       case "-":
       case "*":
-      case "/":
-        {
+      case "/": {
         setBuffer(numInput);
         setInput("");
         setSecond(numInput + " " + operator + " ");
@@ -36,7 +35,7 @@ const Calculator = () => {
 
   const handleEquation = () => {
     let result;
-    
+
     switch (operator) {
       case "+": {
         result = Number(buffer) + Number(numInput);
@@ -80,12 +79,12 @@ const Calculator = () => {
       }
     }
   };
-   const handleClear = () => {
-     setSecond("");
-     setBuffer("");
-     setInput("");
-     setOperator("");
-   };
+  const handleClear = () => {
+    setSecond("");
+    setBuffer("");
+    setInput("");
+    setOperator("");
+  };
 
   return (
     <div>
@@ -98,7 +97,7 @@ const Calculator = () => {
         }}
       >
         {k.map((index) => (
-          <ClcPad numClc={index} back={numberBack} key={index} />
+          <ClcPad numClc={index} back={numberBack} />
         ))}
         <MathOperator
           onOperatorClick={handleOperator}
@@ -108,6 +107,5 @@ const Calculator = () => {
       </Box>
     </div>
   );
-  
 };
 export default Calculator;
